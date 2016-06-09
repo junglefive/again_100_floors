@@ -1,0 +1,43 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/again_100_floors/again_100_floors/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/again_100_floors/again_100_floors/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/again_100_floors/again_100_floors/ipcore_dir/huitailang_rom.vhd" in Library work.
+Architecture huitailang_rom_a of Entity huitailang_rom is up to date.
+Compiling verilog file "../music.v" in library work
+Compiling verilog file "../huitailang.v" in library work
+Module <music> compiled
+Compiling verilog file "../VGAdisplay.v" in library work
+Module <huitailang> compiled
+Module <VGAdisplay> compiled
+No errors in compilation
+Analysis of file <"VGAdisplay.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+
+Total memory usage is 217068 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

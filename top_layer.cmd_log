@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "E:/again_100_floors/again_100_floors/top_layer.xst" -ofn "E:/again_100_floors/again_100_floors/top_layer.syr" 
+xst -intstyle ise -ifn "E:/again_100_floors/again_100_floors/top_layer.xst" -ofn "E:/again_100_floors/again_100_floors/top_layer.syr" 
+xst -intstyle ise -ifn "E:/again_100_floors/again_100_floors/top_layer.xst" -ofn "E:/again_100_floors/again_100_floors/top_layer.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/again_100_floors/more_100_floors.ucf -p xc3s100e-cp132-4 top_layer.ngc top_layer.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o top_layer_map.ncd top_layer.ngd top_layer.pcf 
+par -w -intstyle ise -ol high -t 1 top_layer_map.ncd top_layer.ncd top_layer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_layer.twx top_layer.ncd -o top_layer.twr top_layer.pcf 
+bitgen -intstyle ise -f top_layer.ut top_layer.ncd 
+xst -intstyle ise -ifn "E:/again_100_floors/again_100_floors/top_layer.xst" -ofn "E:/again_100_floors/again_100_floors/top_layer.syr" 

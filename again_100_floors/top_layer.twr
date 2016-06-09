@@ -1,0 +1,185 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\win7software\xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle
+ise -v 3 -s 4 -n 3 -fastpaths -xml top_layer.twx top_layer.ncd -o top_layer.twr
+top_layer.pcf
+
+Design file:              top_layer.ncd
+Physical constraint file: top_layer.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_50m
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+modle       |   12.526(R)|    0.604(R)|clk_50m_BUFGP     |   0.000|
+music_en    |    1.684(R)|   -0.079(R)|clk_50m_BUFGP     |   0.000|
+pause       |   11.937(R)|    1.195(R)|clk_50m_BUFGP     |   0.000|
+sw<0>       |    1.910(R)|    0.934(R)|clk_50m_BUFGP     |   0.000|
+sw<1>       |    2.258(R)|    0.687(R)|clk_50m_BUFGP     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock left_shift
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+pause       |    3.812(R)|   -1.214(R)|left_shift_BUFGP  |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock right_shift
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+pause       |    2.661(R)|   -0.369(R)|right_shift_IBUF  |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_50m to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+VGA_BLUE<0> |   30.958(R)|clk_50m_BUFGP     |   0.000|
+VGA_BLUE<1> |   30.825(R)|clk_50m_BUFGP     |   0.000|
+VGA_GREEN<0>|   22.977(R)|clk_50m_BUFGP     |   0.000|
+VGA_GREEN<1>|   21.741(R)|clk_50m_BUFGP     |   0.000|
+VGA_GREEN<2>|   22.822(R)|clk_50m_BUFGP     |   0.000|
+VGA_HS      |    8.136(R)|clk_50m_BUFGP     |   0.000|
+VGA_RED<0>  |   31.139(R)|clk_50m_BUFGP     |   0.000|
+VGA_RED<1>  |   23.005(R)|clk_50m_BUFGP     |   0.000|
+VGA_RED<2>  |   23.002(R)|clk_50m_BUFGP     |   0.000|
+VGA_VS      |    7.257(R)|clk_50m_BUFGP     |   0.000|
+buzzout     |    9.797(R)|clk_50m_BUFGP     |   0.000|
+led<0>      |   11.607(R)|clk_50m_BUFGP     |   0.000|
+led<1>      |   11.399(R)|clk_50m_BUFGP     |   0.000|
+led<2>      |   11.986(R)|clk_50m_BUFGP     |   0.000|
+led<3>      |   11.982(R)|clk_50m_BUFGP     |   0.000|
+led<4>      |   12.612(R)|clk_50m_BUFGP     |   0.000|
+led<5>      |   11.610(R)|clk_50m_BUFGP     |   0.000|
+led<7>      |   12.516(R)|clk_50m_BUFGP     |   0.000|
+------------+------------+------------------+--------+
+
+Clock left_shift to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+VGA_BLUE<0> |   27.157(R)|left_shift_BUFGP  |   0.000|
+VGA_BLUE<1> |   27.522(R)|left_shift_BUFGP  |   0.000|
+VGA_GREEN<0>|   27.454(R)|left_shift_BUFGP  |   0.000|
+VGA_GREEN<1>|   26.895(R)|left_shift_BUFGP  |   0.000|
+VGA_GREEN<2>|   27.194(R)|left_shift_BUFGP  |   0.000|
+VGA_RED<0>  |   27.617(R)|left_shift_BUFGP  |   0.000|
+VGA_RED<1>  |   27.482(R)|left_shift_BUFGP  |   0.000|
+VGA_RED<2>  |   27.690(R)|left_shift_BUFGP  |   0.000|
+------------+------------+------------------+--------+
+
+Clock right_shift to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+VGA_BLUE<0> |   28.769(R)|right_shift_IBUF  |   0.000|
+VGA_BLUE<1> |   29.134(R)|right_shift_IBUF  |   0.000|
+VGA_GREEN<0>|   29.066(R)|right_shift_IBUF  |   0.000|
+VGA_GREEN<1>|   28.507(R)|right_shift_IBUF  |   0.000|
+VGA_GREEN<2>|   28.806(R)|right_shift_IBUF  |   0.000|
+VGA_RED<0>  |   29.229(R)|right_shift_IBUF  |   0.000|
+VGA_RED<1>  |   29.094(R)|right_shift_IBUF  |   0.000|
+VGA_RED<2>  |   29.302(R)|right_shift_IBUF  |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_50m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50m        |   13.198|         |         |         |
+left_shift     |   22.326|         |         |         |
+right_shift    |   23.569|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock left_shift
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+left_shift     |    9.369|         |         |         |
+right_shift    |   10.984|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock right_shift
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+left_shift     |    9.922|         |         |         |
+right_shift    |    8.942|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+modle          |led<0>         |    9.192|
+modle          |led<1>         |   10.137|
+modle          |led<2>         |   10.383|
+modle          |led<3>         |   10.720|
+modle          |led<4>         |   11.085|
+modle          |led<5>         |    9.652|
+modle          |led<7>         |   10.479|
+pause          |led<0>         |    8.603|
+pause          |led<1>         |    9.548|
+pause          |led<2>         |    9.794|
+pause          |led<3>         |   10.131|
+pause          |led<4>         |   10.496|
+pause          |led<5>         |    9.063|
+pause          |led<7>         |    9.890|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jan 09 16:41:58 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 182 MB
+
+
+

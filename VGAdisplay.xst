@@ -1,0 +1,5 @@
+set -tmpdir "E:/again_100_floors/again_100_floors/xst/projnav.tmp"
+set -xsthdpdir "E:/again_100_floors/again_100_floors/xst"
+elaborate
+-ifn VGAdisplay.prj
+-ifmt mixed

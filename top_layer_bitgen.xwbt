@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\again_100_floors\again_100_floors\top_layer.ncd
+OUTFILE=E:\again_100_floors\again_100_floors\top_layer.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=E:\again_100_floors\again_100_floors
+LICENSE=WebPack
+USER_INFO=__0_0_0

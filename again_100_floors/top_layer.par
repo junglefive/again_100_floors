@@ -1,0 +1,278 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+JH-PC::  Fri Jan 09 16:41:34 2015
+
+par -w -intstyle ise -ol high -t 1 top_layer_map.ncd top_layer.ncd
+top_layer.pcf 
+
+
+Constraints file: top_layer.pcf.
+Loading device for application Rf_Device from file '3s100e.nph' in environment D:\win7software\xilinx\14.7\ISE_DS\ISE\.
+   "top_layer" is an NCD, version 3.2, device xc3s100e, package cp132, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          40 out of 83     48%
+
+   Number of External Input IOBs                  9
+
+      Number of External Input IBUFs              9
+        Number of LOCed External Input IBUFs      9 out of 9     100%
+
+
+   Number of External Output IOBs                31
+
+      Number of External Output IOBs             31
+        Number of LOCed External Output IOBs     31 out of 31    100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        7 out of 24     29%
+   Number of MULT18X18SIOs                   3 out of 4      75%
+   Number of RAMB16s                         3 out of 4      75%
+   Number of Slices                        937 out of 960    97%
+      Number of SLICEMs                      0 out of 480     0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:d52ccd79) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:d52ccd79) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:d52ccd79) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+...................
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <clk_50m_BUFGP/BUFG> is placed at site <BUFGMUX_X1Y1>. The IO component
+   <clk_50m> is placed at site <IPAD67>.  This will not allow the use of the fast path between the IO and the Clock
+   buffer. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <clk_50m.PAD>
+   allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
+   The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that
+   this error condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <right_shift_IBUF_BUFG> is placed at site <BUFGMUX_X2Y10>. The IO component
+   <right_shift> is placed at site <IPAD23>.  This will not allow the use of the fast path between the IO and the Clock
+   buffer. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <right_shift.PAD>
+   allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
+   The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that
+   this error condition be corrected in the design.
+Phase 4.2  Initial Clock and IO Placement (Checksum:89835982) REAL time: 3 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:89835982) REAL time: 3 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:89835982) REAL time: 3 secs 
+
+Phase 7.8  Global Placement
+................
+...............................................................
+.............
+.........................................................................................................
+..............................
+...................
+Phase 7.8  Global Placement (Checksum:824b1a83) REAL time: 8 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:824b1a83) REAL time: 8 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:cc5f6f16) REAL time: 8 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:cc5f6f16) REAL time: 9 secs 
+
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 8 secs 
+Writing design to file top_layer.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 5490 unrouted;      REAL time: 10 secs 
+
+Phase  2  : 5158 unrouted;      REAL time: 10 secs 
+
+Phase  3  : 1420 unrouted;      REAL time: 10 secs 
+
+Phase  4  : 1571 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+
+Updating file: top_layer.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+
+Updating file: top_layer.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+WARNING:Route:455 - CLK Net:U3/U33/clk_flg may have excessive skew because 
+      4 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/clk_score_tmp1 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/clk_score_tmp2 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 19 secs 
+Total CPU time to Router completion: 19 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|       clk_50m_BUFGP |  BUFGMUX_X1Y1| No   |  140 |  0.027     |  0.065      |
++---------------------+--------------+------+------+------------+-------------+
+|    left_shift_BUFGP |  BUFGMUX_X2Y1| No   |    6 |  0.029     |  0.071      |
++---------------------+--------------+------+------+------------+-------------+
+|    right_shift_IBUF | BUFGMUX_X2Y10| No   |    5 |  0.007     |  0.067      |
++---------------------+--------------+------+------+------------+-------------+
+|           clk_score |  BUFGMUX_X2Y0| No   |    8 |  0.008     |  0.064      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk_8hz | BUFGMUX_X1Y10| No   |   11 |  0.019     |  0.061      |
++---------------------+--------------+------+------+------------+-------------+
+|    U3/U33/clk_frame | BUFGMUX_X1Y11| No   |    7 |  0.017     |  0.072      |
++---------------------+--------------+------+------+------------+-------------+
+| U3/U35/U345/clk_seg | BUFGMUX_X2Y11| No   |    2 |  0.011     |  0.056      |
++---------------------+--------------+------+------+------------+-------------+
+|      U3/U33/clk_flg |         Local|      |    6 |  0.940     |  1.675      |
++---------------------+--------------+------+------+------------+-------------+
+|   U2/clk_score_tmp1 |         Local|      |    2 |  0.000     |  1.405      |
++---------------------+--------------+------+------+------------+-------------+
+|   U2/clk_score_tmp2 |         Local|      |    2 |  0.000     |  1.458      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    13.198ns|     N/A|           0
+  _50m_BUFGP                                | HOLD        |     0.927ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net lef | SETUP       |         N/A|     9.369ns|     N/A|           0
+  t_shift_BUFGP                             | HOLD        |     1.607ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net rig | SETUP       |         N/A|     8.942ns|     N/A|           0
+  ht_shift_IBUF                             | HOLD        |     1.615ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.520ns|     N/A|           0
+  _score                                    | HOLD        |     1.104ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.820ns|     N/A|           0
+  _8hz                                      | HOLD        |     1.012ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U3/ | SETUP       |         N/A|     8.017ns|     N/A|           0
+  U33/clk_frame                             | HOLD        |     1.070ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U3/ | SETUP       |         N/A|     1.902ns|     N/A|           0
+  U35/U345/clk_seg                          | HOLD        |     1.099ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U3/ | SETUP       |         N/A|     4.398ns|     N/A|           0
+  U33/clk_flg                               | HOLD        |     0.998ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     2.266ns|     N/A|           0
+  clk_score_tmp1                            | HOLD        |     1.576ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     2.265ns|     N/A|           0
+  clk_score_tmp2                            | HOLD        |     1.575ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 19 secs 
+Total CPU time to PAR completion: 19 secs 
+
+Peak Memory Usage:  318 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 5
+Number of info messages: 1
+
+Writing design to file top_layer.ncd
+
+
+
+PAR done!

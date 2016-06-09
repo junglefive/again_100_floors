@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/huitailang_rom.vhd"
+verilog work "../music.v"
+verilog work "../huitailang.v"
+verilog work "../VGAdisplay.v"
